@@ -1,0 +1,20 @@
+#main-container {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: row;
+  width:100vw;
+  height:100vh;
+}
+
+#side-bar {
+  background-color: grey;
+  width: 25%;
+  height: 100%;
+}
+
+#chat-view{
+  width: 75%;
+  height: 100%;
+}
