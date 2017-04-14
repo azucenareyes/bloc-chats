@@ -1,8 +1,10 @@
 <div id="main-container">
-  <div id="side-bar" ng-click="main.consoleLogSofia()">
+  <div id="side-bar">
     <h1>{{ main.title }}</h1>
     <ul>
-      
+      <li ng-repeat="room in main.rooms">
+        {{ room.$value }}
+      </li>
     </ul>
   </div>
   <div id="chat-view"></div>
