@@ -4,6 +4,7 @@
 <head lang="en">
   <meta charset="UTF-8">
   <title>Bloc Base Project</title>
+  <link rel="stylesheet" herf="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="/styles/main.css">
 </head>
 
@@ -21,17 +22,23 @@
     storageBucket: "blocchat-b5e84.appspot.com",
     messagingSenderId: "4043053592"
   };
-  //module method
+  // module method
   firebase.initializeApp(config);
   </script>
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <!-- Angular -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
   <!-- AngularFire -->
   <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
+  <!-- bootstrap   -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+
   <script src="/scripts/app.js"></script>
   <script src="/scripts/services/Room.js"></script>
   <script src="/scripts/controllers/MainCtrl.js"></script>
+  <script src="/scripts/controllers/ModalCtrl.js"></script>
 </body>
 
 </html>

@@ -1,9 +1,10 @@
 <div id="main-container">
   <div id="side-bar">
     <h1>{{ main.title }}</h1>
+    <button class="btn-sm btn-success" ng-click="main.open()">Add A New Chat Room</button>
     <ul>
       <li ng-repeat="room in main.rooms">
-        {{ room.$value }}
+        {{ room.name }}
       </li>
     </ul>
   </div>

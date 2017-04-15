@@ -14,6 +14,6 @@
   }
   angular
   //'blocChats' is just the name, the array holds the dependencies
-    .module('blocChats', ['ui.router', 'firebase'])
+    .module('blocChats', ['ui.router', 'firebase', 'ui.bootstrap'])
     .config(config);
 })();
