@@ -5,10 +5,17 @@
       <button class="btn-sm btn-success" ng-click="main.open()">New Room</button>
     </div>
     <ul class="list-unstyled">
-      <li ng-repeat="room in main.rooms">
+      <li ng-repeat="room in main.rooms" ng-click="main.setActiveChatRoom(room)">
         {{ room.name }}
       </li>
     </ul>
   </nav>
-  <div class="col-md-10" id="primary-chat"></div>
+  <div class="col-md-10" id="primary-chat">
+    <h2>{{ main.activeRoom.name }}</h2>
+    <ul class="list-unstyled">
+      <li ng-repeat="message in main.messages">
+        {{ message.content }}
+      </li>
+    </ul>
+  </div>
 </div>
