@@ -1,1 +1,14 @@
-<h1>Hello World</h1>
+<div class="row container-fluid">
+  <nav class="col-md-2" id="nav-sidebar">
+    <div id="sidebar-header">
+      <h1>{{ main.title }}</h1>
+      <button class="btn-sm btn-success" ng-click="main.open()">New Room</button>
+    </div>
+    <ul class="list-unstyled">
+      <li ng-repeat="room in main.rooms">
+        {{ room.name }}
+      </li>
+    </ul>
+  </nav>
+  <div class="col-md-10" id="primary-chat"></div>
+</div>

@@ -1,0 +1,22 @@
+/* Helps for different screens*/
+*, *::before, *::after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /* Find out where main container is listed or referrenced*/
+}
+
+#nav-sidebar {
+  background-color: grey;
+  height: 100vh;
+}
+#primary-chat {
+  height: 100vh;
+  background-color: pink;
+}
+#sidebar-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -13,11 +13,14 @@
   "author": "Bloc Inc",
   "license": "ISC",
   "dependencies": {
+    "angular-ui-bootstrap": "^2.5.0",
     "hapi": "~7.5.0",
     "path": "^0.4.9"
   },
   "devDependencies": {
     "connect-modrewrite": "^0.7.9",
-    "es5-shim": "^4.0.1"
+    "es5-shim": "^4.0.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0"
   }
 }

@@ -8,10 +8,12 @@
     $stateProvider
       .state('main', {
         url: '/',
+        controller: 'MainCtrl as main',
         templateUrl: '/templates/main.html'
       });
   }
   angular
-    .module('blocChats', ['ui.router', 'firebase'])
+  //'blocChats' is just the name, the array holds the dependencies
+    .module('blocChats', ['ui.router', 'firebase', 'ui.bootstrap'])
     .config(config);
 })();
