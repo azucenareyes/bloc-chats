@@ -9,7 +9,7 @@
       .state('main', {
         url: '/',
         controller: 'MainCtrl as main',
-        templateUrl: '/templates/main.html'
+        templateUrl: '/templates/main.html',
       });
   }
   angular
