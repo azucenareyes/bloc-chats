@@ -1,23 +1,17 @@
 (function() {
   function MainCtrl(Room, $uibModal) {
-    this.title = "Bloc Chats";
+    this.title = 'bloc chats';
     this.rooms = Room.all;
-    console.log(Room.all);
-    this.newRooms = Room.addNewRoom;
     this.open = function() {
-      var newChatRoomModal = $uibModal.open({
+      const newChatRoomModal = $uibModal.open({
         templateUrl: '/templates/newChatRoomModal.html',
-        controller: 'ModalCtrl as modal'
-      });
-
-      newChatRoomModal.result.then(function(newChatRoomName) {
-        Room.addNewRoom(newChatRoomName);
+        controller: 'ModalCtrl as modal',
+        size: 'sm',
       });
     };
   }
 
   angular
     .module('blocChats')
-
     .controller('MainCtrl', ['Room', '$uibModal', MainCtrl]);
 })();
