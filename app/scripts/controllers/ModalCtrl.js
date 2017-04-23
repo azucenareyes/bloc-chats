@@ -7,7 +7,6 @@
     this.submit = function() {
 //Make sure the data is coming in from the input field, verify then we can delete
       Room.addNewRoom(this.text);
-
       $uibModalInstance.close();
     };
     this.cancel = function(){

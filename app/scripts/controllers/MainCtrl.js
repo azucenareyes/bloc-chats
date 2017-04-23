@@ -11,8 +11,9 @@
         size: 'sm',
       });
     };
-    this.setActiveChatRoom = function (newRoom) {
-      this.activeRoom = newRoom;
+    this.setActiveChatRoom = function (room) {
+      this.activeRoom = room;
+      this.messages = Message.getMessagesByRoom(room.$id);
     };
   }
 
