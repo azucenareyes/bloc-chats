@@ -1,6 +1,7 @@
-//
+//Fix for Cookies
+
 (function () {
-  function ModalCtrl($uibModalInstance, Room) {
+  function CookiesCtrl($uibModalInstance, Room) {
     //2 things this controller needs to do
     this.text = '';
     this.textNewName = '';
@@ -18,6 +19,6 @@
   angular
     .module('blocChats')
 
-  //  .controller('ModalCtrl', ['Room', '$uibModalInstance', ModalCtrl]);
-    .controller('ModalCtrl', [ '$uibModalInstance', 'Room', ModalCtrl]);
+  //  .controller('CookiesCtrl', ['Room', '$uibModalInstance', CookiesCtrl]);
+    .controller('CookiesCtrl', [ '$uibModalInstance', 'Room', CookiesCtrl]);
 })();
