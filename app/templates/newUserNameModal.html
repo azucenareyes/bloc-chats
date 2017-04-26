@@ -1,0 +1,15 @@
+<div>
+  <div class="modal-header">
+   <h3 class="modal-title ">Set a username</h3>
+  </div>
+  <div class="modal-body">
+    <div class="form-group modal-input">
+      <label for="newChatRoomName">This name will appear when you send messages</label>
+      <input id="newChatRoomName" type="text" ng-model="user.text">
+    </div>
+  </div>
+
+  <div class="modal-footer">
+    <button class="btn btn-success" type="button" ng-disabled="user.text === ''" ng-click="user.submit()">Set New User</button>
+  </div>
+</div>

@@ -2,10 +2,10 @@
   function MainCtrl(Room, $uibModal, Message) {
     this.title = 'bloc chats';
     this.rooms = Room.all;
-    this.messages = Message.all;
+    this.messages = null;
     this.activeRoom = null;
     this.open = function () {
-      let newChatRoomModal = $uibModal.open({
+      $uibModal.open({
         templateUrl: '/templates/newChatRoomModal.html',
         controller: 'ModalCtrl as modal',
         size: 'sm',
