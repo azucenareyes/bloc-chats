@@ -7,8 +7,16 @@
       var convo = $firebaseArray(filteredMessages);
       return convo;
     };
+    var newMessage = function (message, currentRoom, currentUser) {
+      messages.$add({
+        content: message,
+        roomId: currentRoom,
+        sentAt: "today",
+        username: currentUser,
+      })
+    }
 
-    return { all: messages, getMessagesByRoom: getMessagesById };
+    return { getMessagesByRoom: getMessagesById, addNewMessage: newMessage };
   }
 
   angular
