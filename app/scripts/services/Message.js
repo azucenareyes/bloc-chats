@@ -11,7 +11,7 @@
       messages.$add({
         content: message,
         roomId: currentRoom,
-        sentAt: "today",
+        sentAt: Date.now(),
         username: currentUser,
       })
     }

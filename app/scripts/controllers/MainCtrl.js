@@ -16,11 +16,18 @@
       this.activeRoom = room;
       this.messages = Message.getMessagesByRoom(room.$id);
     };
-    this.sendMessage = function() {
+    this.sendMessage = function () {
       var currentUser = $cookies.get('CurrentUser');
       Message.addNewMessage(this.text, this.activeRoom.$id, currentUser);
       this.text = '';
-    }
+    },
+    this.formatDate = function (date) {
+      var dateObj = new Date(date);
+      var hours = dateObj.getHours();
+      var minutos = dateObj.getMinutes();
+      var minutes = (minutos <= 9) ? '0' + minutos : minutos
+      return hours + ':' + minutes
+      }
   }
 
   angular

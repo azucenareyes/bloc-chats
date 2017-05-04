@@ -16,7 +16,7 @@
     <h2>{{ main.activeRoom.name }}</h2>
     <ul class="list-unstyled">
       <li ng-repeat="message in main.messages">
-        {{ message.content }}
+        {{ message.content }}<span>{{ main.formatDate(message.sentAt) }}</span>
       </li>
     </ul>
     <div>
